@@ -17,7 +17,8 @@ return {
     --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
     --   desc = "Previous buffer",
     -- },
-
+    ["<A-j>"] = { ":m .+1<CR>==", desc = "move text down" },
+    ["<A-k>"] = { ":m .-2<CR>==", desc = "move text up" },
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
@@ -36,5 +37,10 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  i = {
+    ["<A-k>"] = { "<Esc>:m .-2<CR>==i", desc = "move text up" },
+    ["<A-j>"] = { "<Esc>:m .+1<CR>==i", desc = "move text down" },
+    -- mappings seen under group name "Buffer"
   },
 }
