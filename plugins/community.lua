@@ -6,7 +6,7 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.colorscheme.dracula-nvim" },
-   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
+   { import = "astrocommunity.colorscheme.dracula-nvim" },
    { import = "astrocommunity.pack.tailwindcss" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
