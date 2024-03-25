@@ -22,6 +22,11 @@ return {
         -- "stylua",
       })
     end,
+    config = function()
+      require("mason-null-ls").setup {
+        automatic_installation = false,
+      }
+    end,
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
